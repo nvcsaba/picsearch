@@ -1,0 +1,114 @@
+<!DOCTYPE html >
+<!-- Created by Viet Csaba Nguyen -->
+<html lang="en">
+    <head>
+
+        <title>Product Image Search</title>
+
+        <meta name="theme-color" content="#FCEF1CFF">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137348996-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137348996-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-137348996-1');
+        </script>
+
+        <!-- Connect to Adsense -->
+
+       <!--  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6416993031779855",
+            enable_page_level_ads: true
+          });
+        </script> -->
+
+        <!--Cookie Consent -->
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000",
+            },
+            "button": {
+              "background": "#f1d600"
+            }
+          },
+          "position": "top"
+        })});
+        </script>
+
+        <!-- Load jQery  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Bootstrap Stylesheet -->
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="display-4">Product Image Search v2</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>
+                        <label for="barcode">Barcode(s):</label> <input type="text" id="barcode" name="barcode" autofocus="">
+                        <button  href="#" id="submit" class="btn btn-primary">Get Picture!</button>
+              <button class="btn btn-success" onclick="window.print();return false;">
+                  Print
+              </button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center" id="results">
+
+                <!-- <div class="col-md-3 imagediv">
+                    <img src="http://static.theworks.co.uk/images/5052089185500_L.jpg">
+                    <span class="bcode">5052089185500</span>
+                </div> -->
+
+
+                <div class="col-md-12">
+                    <p class="Guide">To get started please type or paste one or more barcodes in the field above.</p>
+                    <p>It will automaticaly detect the barcodes. Go ahead and try it(9780007477159, 5036905027229)</p>
+                    <p>It can be used for tactical counts, mop-ups, promotions, sale lists, TPTs... you name it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-print-none footer">
+            <div class="row">
+                <div class=" col-md-6 footer-left d-print-none">
+                    <p>Created by Viet Csaba Nguyen</p>
+                </div>
+                <div class=" col-md-6 footer-right d-print-none">
+                    <p>Report bugs: info@icodeweb.co.uk</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
