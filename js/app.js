@@ -119,3 +119,18 @@
                 setTimeout(doMagic
                     ,100);
             });
+
+
+            //Toggle Scroll to top button
+            $(window).scroll(function(event) {
+                if($(this).scrollTop()>100){
+                    $('.gotop').fadeIn();
+                } else {
+                    $('.gotop').fadeOut();
+                }
+            });
+
+            //Scroll to top
+            $('.gotop').click(function(){
+                $('html').animate({ scrollTop: 0 }, 'slow');
+            });
