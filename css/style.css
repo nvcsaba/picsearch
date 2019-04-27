@@ -72,3 +72,15 @@ img{
 }
 .footer-right{
 }
+
+@media (max-width: 767px) {
+    .bcode{
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .bcode{
+    font-size: 1.7rem;
+    }
+}

@@ -44,12 +44,12 @@
             function loadImg(item){
 
                 let productDiv = document.createElement('div');      //Create Div to hold product image & add to page
-                productDiv.classList.add("col-md-3", "imagediv");
+                productDiv.classList.add("col-sm-3", "imagediv");
 
                 let container = $('#results')[0].appendChild(productDiv);
 
 
-                let img = new Image(200,200);        //Create new image with loading animation then add to productDiv
+                let img = new Image();        //Create new image with loading animation then add to productDiv
                 img.src = `img/loading2.gif`;
                 img.alt = "loading";
                 img.id = item;
@@ -57,7 +57,7 @@
                 let element = container.appendChild(img);
                                                             //Load the the product image asyncronously
                 new Promise(function(resolve,reject){
-                    let img2 = new Image(200,200);
+                    let img2 = new Image();
                     img2.onload = ()=>{
                         resolve(img2);
                     };
