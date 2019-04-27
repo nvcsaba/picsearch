@@ -84,3 +84,10 @@ img{
     font-size: 1.7rem;
     }
 }
+
+@media print
+{
+    .imagediv{
+        page-break-inside: avoid;
+    }
+}
